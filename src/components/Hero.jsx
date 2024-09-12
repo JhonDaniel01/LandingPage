@@ -35,7 +35,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      {/* Imagen */}
+      {/* Imagen hero*/}
       <div className="md:col-span-3 flex items-center justify-center relative">
         <div>
           <img
