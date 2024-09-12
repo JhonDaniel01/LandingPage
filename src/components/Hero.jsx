@@ -1,5 +1,5 @@
 import React from "react";
-import { RiCircleFill, RiPlayFill } from "react-icons/ri";
+import { RiCircleFill, RiPlayFill, RiStarFill } from "react-icons/ri";
 
 const Hero = () => {
   return (
@@ -42,7 +42,18 @@ const Hero = () => {
             src="hero.png"
             className="w-[450px] h-[450px] object-cover -mt-28"
           />
-          <div></div>
+          <div className="bg-white shadow-xl rounded-lg p-4 flex flex-col gap-2 justify-center max-w-[250px] mx-auto ">
+            {/* Centrar div tambien  ml-[50%] -translate-x-1/2*/}
+            <img
+              src="https://img.freepik.com/foto-gratis/chico-guapo-seguro-posando-contra-pared-blanca_176420-32936.jpg"
+              className="w-10 h-10 object-contain rounded-full"
+            />
+            <h2 className="text-xl font-medium">120 + Employees</h2>
+            <div className="flex items-center gab-2 text-gray-500 ">
+              <RiStarFill className="text-primary" />
+              5.0 (3.1 K Reiviews)
+            </div>
+          </div>
         </div>
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[380px] w-[380px] bg-secondary border-[10px] border-primary rounded-full -z-10 "></div>
       </div>
