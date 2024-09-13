@@ -44,11 +44,31 @@ const Hero = () => {
           />
           <div className="bg-white shadow-xl rounded-lg p-4 flex flex-col gap-2 justify-center max-w-[250px] mx-auto ">
             {/* Centrar div tambien  ml-[50%] -translate-x-1/2*/}
-            <img
-              src="https://img.freepik.com/foto-gratis/chico-guapo-seguro-posando-contra-pared-blanca_176420-32936.jpg"
-              className="w-10 h-10 object-contain rounded-full"
-            />
-            <h2 className="text-xl font-medium">120 + Employees</h2>
+            <div className="flex items-center">
+              <img
+                src="https://img.freepik.com/foto-gratis/chico-guapo-seguro-posando-contra-pared-blanca_176420-32936.jpg"
+                className="w-10 h-10 object-cover rounded-full ring-2 ring-gray-300 -ml-4"
+              />
+              <img
+                src="https://img.freepik.com/foto-gratis/apoyo-optimismo-alegre-agradable-morena-europea-gafas-sueter-mostrando-pulgares-arriba-impresionado-encantado-que-gusta-producto-dando-respuesta-positiva-recomendandolo-sobre-pared-gris_176420-35790.jpg"
+                className="w-10 h-10 object-cover rounded-full ring-2 ring-gray-300 -ml-4"
+              />
+              <img
+                src="https://img.freepik.com/foto-gratis/seguro-joven-apuntando-camara_74855-4132.jpg"
+                className="w-10 h-10 object-cover rounded-full ring-2 ring-gray-300 -ml-4"
+              />
+              <img
+                src="https://img.freepik.com/fotos-premium/trabajador-construccion-joven-guapo-barba_251136-3489.jpg"
+                className="w-10 h-10 object-cover rounded-full ring-2 ring-gray-300 -ml-4"
+              />
+              <img
+                src="https://img.freepik.com/foto-gratis/chico-guapo-seguro-posando-contra-pared-blanca_176420-32936.jpg"
+                className="w-10 h-10 object-cover rounded-full ring-2 ring-gray-300 -ml-4"
+              />
+            </div>
+            <h2 className="text-xl font-bold text-gray-800 tracking-[1px]">
+              120 + Employees
+            </h2>
             <div className="flex items-center gab-2 text-gray-500 ">
               <RiStarFill className="text-primary" />
               5.0 (3.1 K Reiviews)
