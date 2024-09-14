@@ -1,5 +1,10 @@
 import React from "react";
-import { RiCircleFill, RiPlayFill, RiStarFill } from "react-icons/ri";
+import {
+  RiCircleFill,
+  RiPlayFill,
+  RiStarFill,
+  RiCheckboxBlankFill,
+} from "react-icons/ri";
 
 const Hero = () => {
   return (
@@ -42,7 +47,7 @@ const Hero = () => {
             src="hero.png"
             className="w-[450px] h-[450px] object-cover -mt-28"
           />
-          <div className="bg-white shadow-xl rounded-lg p-4 flex flex-col gap-2 justify-center max-w-[250px] mx-auto ">
+          <div className="relative bg-white shadow-xl rounded-lg p-4 flex flex-col gap-2 justify-center max-w-[250px] mx-auto -mt-12">
             {/* Centrar div tambien  ml-[50%] -translate-x-1/2*/}
             <div className="flex items-center">
               <img
@@ -72,6 +77,12 @@ const Hero = () => {
             <div className="flex items-center gab-2 text-gray-500 ">
               <RiStarFill className="text-primary" />
               5.0 (3.1 K Reiviews)
+            </div>
+            <div className="absolute -right-12 -bottom-12 -z-10">
+              <div className="relative">
+                <RiCircleFill className=" text-primary text-8xl " />
+                <div className="absolute bg-white -left-0 -top-0 w-14 h-14"></div>
+              </div>
             </div>
           </div>
         </div>
