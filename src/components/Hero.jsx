@@ -8,13 +8,13 @@ import {
 
 const Hero = () => {
   return (
-    <section className="h-[90vh] grid grid-cols-1 md:grid-cols-8">
+    <section className="min-h-[90vh] grid grid-cols-1 xl:grid-cols-8 p-8 ">
       {/* Information */}
-      <div className=" md:col-span-5 flex items-center justify-center p-16">
+      <div className=" md:col-span-5 flex items-center justify-center p-4  xl:p-16 ">
         <div className="flex flex-col gap-8">
-          <h1 className="text-7xl font-bold leading-[7rem]">
+          <h1 className="text-5xl xl:text-7xl font-bold leading-[4rem] xl:leading-[7rem]">
             Web Design Impactful Digital{" "}
-            <span className="text-primary py-2 px-6 border-8 border-primary relative">
+            <span className="text-primary py-2 px-6 border-8 border-primary relative inline-block">
               Products
               <RiCircleFill className="text-base  absolute -left-5 -top-5 text-white p-2 bg-primary rounded-full box-content" />
               <RiCircleFill className="text-base  absolute -right-5 -top-5 text-white p-2 bg-primary rounded-full box-content" />
@@ -28,11 +28,11 @@ const Hero = () => {
             primis in faucibus orci luctus et ultrices posuere cubilia curae;
             Sed sed nisi augue.
           </p>
-          <div className="flex items-center gap-8">
-            <button className="bg-primary text-white py-2 px-6 rounded-xl text-xl">
+          <div className="flex flex-col md:flex-row items-center gap-8">
+            <button className="md:w-full bg-primary text-white py-2 px-6 rounded-xl text-xl">
               Contact Us
             </button>
-            <button className="flex items-center gap-4 py-2 px-6 rounded-xl text-xl text-left">
+            <button className="md:w-full flex items-center gap-4 py-2 px-6 rounded-xl text-xl text-left">
               <RiPlayFill className=" bg-secondary text-primary p-4 box-content rounded-full" />{" "}
               Watch our <br />
               introduction video
@@ -41,11 +41,11 @@ const Hero = () => {
         </div>
       </div>
       {/* Imagen hero*/}
-      <div className="md:col-span-3 flex items-center justify-center relative">
+      <div className="md:col-span-3 flex items-center justify-center relative p-8">
         <div>
           <img
             src="hero.png"
-            className="w-[450px] h-[450px] object-cover -mt-28"
+            className="w-[250px] h-[250px] md:w-[450px] md:h-[450px] object-cover xl:-mt-28"
           />
           <div className="relative bg-white shadow-xl rounded-lg p-4 flex flex-col gap-2 justify-center max-w-[250px] mx-auto -mt-12">
             {/* Centrar div tambien  ml-[50%] -translate-x-1/2*/}
@@ -86,7 +86,21 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[380px] w-[380px] bg-secondary border-[10px] border-primary rounded-full -z-10 "></div>
+        {/* Circulo */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[280px] w-[280px] md:h-[380px] md:w-[380px] bg-secondary border-[10px] border-primary rounded-full -z-10 "></div>
+        {/* Logos */}
+        <img
+          src="figma.png"
+          className="md:w-20 md:h-20 w-10 h-10 object-cover rounded-full border-l-8 border-gray-600 absolute top-[12%] xl:right-[10%] right-[20%]"
+        />
+        <img
+          src="adobe.png"
+          className="md:w-20 md:h-20 w-10 h-10 object-cover rounded-full border-l-8 border-gray-600 absolute xl:top-[2%] xl:left-[10%] top-[10%] left-[20%]"
+        />
+        <img
+          src="sketch.png"
+          className="md:w-20 md:h-20 w-10 h-10 object-cover rounded-full absolute bottom-[5%] left-[15%] xl:left-[3%] -rotate-12"
+        />
       </div>
     </section>
   );
