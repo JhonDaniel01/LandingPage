@@ -2,7 +2,7 @@ import React from "react";
 
 const Works = () => {
   return (
-    <div className="p-20">
+    <div className="p-8 xl:p-20">
       <div className="mt-8">
         <h1 className="text-[40px] font-bold">
           We create world-clas digital products
@@ -11,7 +11,7 @@ const Works = () => {
           Lorem, ipsum dolor sit amet consectetur adipisicing elit.{" "}
         </p>
         {/* Works */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
           <div className="flex flex-col gap-2">
             <img
               src="work1.png"

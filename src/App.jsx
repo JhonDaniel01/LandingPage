@@ -3,6 +3,8 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Clients from "./components/clients";
 import Works from "./components/Works";
+import Reviews from "./components/Reviews";
+import Services from "./components/Services";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -13,6 +15,8 @@ function App() {
       <Hero />
       <Clients />
       <Works />
+      <Reviews/>
+      <Services/>
     </div>
   );
 }
