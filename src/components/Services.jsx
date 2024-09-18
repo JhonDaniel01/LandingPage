@@ -29,7 +29,7 @@ const Services = () => {
       {/* Services */}
       <div>
         <div>
-          <RiBarcodeLine /> <RiBookmark3Fill />
+          <RiBarcodeLine className="" /> <RiBookmark3Fill className="" />
         </div>
       </div>
     </div>
