@@ -5,6 +5,7 @@ import Clients from "./components/clients";
 import Works from "./components/Works";
 import Reviews from "./components/Reviews";
 import Services from "./components/Services";
+import Footer from "./components/Footer";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -15,8 +16,9 @@ function App() {
       <Hero />
       <Clients />
       <Works />
-      <Reviews/>
-      <Services/>
+      <Reviews />
+      <Services />
+      <Footer />
     </div>
   );
 }
