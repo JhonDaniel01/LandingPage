@@ -21,6 +21,7 @@ const Footer = () => {
             <RiCircleFill className="absolute -left-3 -bottom-3 text-primary -z-10" />
           </a>
         </div>
+        {/* Social media */}
         <nav className="flex items-center gap-4">
           <a href="#" className="block bg-primary text-white p-4 rounded-full">
             <RiInstagramLine />
