@@ -9,7 +9,7 @@ import {
 const Footer = () => {
   return (
     <footer className="bg-footer xl:p-20 p-8 relative">
-      <div className="-mt-10 flex items-center justify-between border-b pb-8 border-gray-500">
+      <div className="flex flex-col md:flex-row xl:-mt-10 -mt-4 items-center justify-between border-b pb-8 border-gray-500 gap-4">
         {/* Logo */}
         <div className="w-1/6">
           {" "}
@@ -37,9 +37,11 @@ const Footer = () => {
           </a>
         </nav>
       </div>
-      <div className="mt-8">
-        <h3 className="tex-lg font-bold text-white">Company</h3>
-        <nav className="mt-4 flex items-center justify-between">
+      <div className=" mt-8">
+        <h3 className="md:text-left text-center tex-lg font-bold text-white">
+          Company
+        </h3>
+        <nav className="flex-col md:flex-row mt-4 flex items-center justify-between gap-4">
           <a
             href="#"
             className="text-gray-300 mt-4 hover:text-white transition-colors"
