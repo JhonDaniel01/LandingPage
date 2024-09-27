@@ -41,6 +41,7 @@ const Footer = () => {
         <h3 className="md:text-left text-center tex-lg font-bold text-white">
           Company
         </h3>
+        {/* Menu footer */}
         <nav className="flex-col md:flex-row mt-4 flex items-center justify-between gap-4">
           <a
             href="#"
